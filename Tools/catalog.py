@@ -19,11 +19,12 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.18"
-REVISION = 2026101801
-CHECKED = "2026-10-18"
-UPDATED = "2026-10-18"
+VERSION = "2026.10.19"
+REVISION = 2026101901
+CHECKED = "2026-10-19"
+UPDATED = "2026-10-19"
 CHANGES = [
+    {"date": "2026-10-19", "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-18", "text": "First published catalog: 33 Singapore cards from 10 banks."},
 ]
 
@@ -482,10 +483,10 @@ P.append(dict(
     rewardType="cashback", baseRate=1.5, foreignBaseRate=0, fxFeePercent=3.0, colorHex="#F26522",
     annualFee="No annual fee",
     rules=[dict(id="fcy-promo", label="Overseas: 1.5% back and 0% FX fee (promo)", rate=1.5, currency="foreign", fxFeeOverride=0,
-                validUntil="2026-12-31", excludeCategories=["walletTopUp"],
+                validUntil="2027-12-31", excludeCategories=["walletTopUp"],
                 cap=cap("spend", 1500, "calendarMonth", "mari-fcy"))],
     highlights=["1.5% on everything in SGD — no minimum, no cap, no annual fee",
-                "0% FX fee and 1.5% back overseas (up to S$1,500 a month) until 31 Dec 2026",
+                "0% FX fee and 1.5% back overseas (up to S$1,500 a month) until 31 Dec 2027",
                 "On Shopee, pay with Mari Instant Checkout to get the 1.5% as Shopee Coins"],
     warnings=["No ATM withdrawals with this card"],
 ))

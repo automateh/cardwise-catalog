@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.18",
-  "revision": 2026101801,
-  "updated": "2026-10-18",
-  "checked": "2026-10-18",
+  "version": "2026.10.19",
+  "revision": 2026101901,
+  "updated": "2026-10-19",
+  "checked": "2026-10-19",
   "currency": "SGD",
   "note": "Estimates from public sources (MileLion, MainlyMiles, SingSaver, MoneySmart, YouTrip, issuer pages). Banks change terms often — always check the bank's T&Cs.",
   "changes": [
+    {
+      "date": "2026-10-19",
+      "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."
+    },
     {
       "date": "2026-10-18",
       "text": "First published catalog: 33 Singapore cards from 10 banks."
@@ -1790,7 +1794,7 @@
           "rate": 1.5,
           "currency": "foreign",
           "fxFeeOverride": 0,
-          "validUntil": "2026-12-31",
+          "validUntil": "2027-12-31",
           "excludeCategories": [
             "walletTopUp"
           ],
@@ -1804,7 +1808,7 @@
       ],
       "highlights": [
         "1.5% on everything in SGD — no minimum, no cap, no annual fee",
-        "0% FX fee and 1.5% back overseas (up to S$1,500 a month) until 31 Dec 2026",
+        "0% FX fee and 1.5% back overseas (up to S$1,500 a month) until 31 Dec 2027",
         "On Shopee, pay with Mari Instant Checkout to get the 1.5% as Shopee Coins"
       ],
       "warnings": [
