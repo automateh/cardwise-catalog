@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.19",
-  "revision": 2026101901,
-  "updated": "2026-10-19",
-  "checked": "2026-10-19",
+  "version": "2026.10.20",
+  "revision": 2026102001,
+  "updated": "2026-10-20",
+  "checked": "2026-10-20",
   "currency": "SGD",
   "note": "Estimates from public sources (MileLion, MainlyMiles, SingSaver, MoneySmart, YouTrip, issuer pages). Banks change terms often — always check the bank's T&Cs.",
   "changes": [
+    {
+      "date": "2026-10-20",
+      "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."
+    },
     {
       "date": "2026-10-19",
       "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."
@@ -1213,15 +1217,16 @@
           "currency": "foreign",
           "minSpend": 0,
           "fxFeeOverride": 0,
-          "validUntil": "2026-12-31",
+          "validUntil": "2027-12-31",
           "excludeCategories": [
             "walletTopUp"
-          ]
+          ],
+          "note": "0.5% in China and Europe (and Australia from 1 Jan 2027)."
         }
       ],
       "highlights": [
         "10% on local online and Apple Pay spend (S$30 cap) and on telco, streaming and gym bills (S$20 cap) with S$800 a statement month",
-        "0% FX fee plus 1% cashback overseas until 31 Dec 2026"
+        "0% FX fee plus up to 1% cashback overseas until 31 Dec 2027"
       ],
       "warnings": [
         "Below S$800 you earn 0.3%",

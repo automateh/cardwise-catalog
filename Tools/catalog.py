@@ -19,11 +19,12 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.19"
-REVISION = 2026101901
-CHECKED = "2026-10-19"
-UPDATED = "2026-10-19"
+VERSION = "2026.10.20"
+REVISION = 2026102001
+CHECKED = "2026-10-20"
+UPDATED = "2026-10-20"
 CHANGES = [
+    {"date": "2026-10-20", "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-19", "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-18", "text": "First published catalog: 33 Singapore cards from 10 banks."},
 ]
@@ -334,10 +335,11 @@ P.append(dict(
         dict(id="subscriptions", label="Telco, streaming & gym bills", rate=10, categories=["subscriptions"], currency="local",
              cap=cap("reward", 20, "statementMonth", "evol-subs")),
         dict(id="fcy-promo", label="Overseas spend, 0% FX fee (promo)", rate=1, currency="foreign", minSpend=0, fxFeeOverride=0,
-             validUntil="2026-12-31", excludeCategories=["walletTopUp"]),
+             validUntil="2027-12-31", excludeCategories=["walletTopUp"],
+             note="0.5% in China and Europe (and Australia from 1 Jan 2027)."),
     ],
     highlights=["10% on local online and Apple Pay spend (S$30 cap) and on telco, streaming and gym bills (S$20 cap) with S$800 a statement month",
-                "0% FX fee plus 1% cashback overseas until 31 Dec 2026"],
+                "0% FX fee plus up to 1% cashback overseas until 31 Dec 2027"],
     warnings=["Below S$800 you earn 0.3%",
               "Unused UOB cashback is forfeited after two years or when you close the card"],
 ))
