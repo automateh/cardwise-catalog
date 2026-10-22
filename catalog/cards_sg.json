@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.22",
-  "revision": 2026102201,
+  "version": "2026.10.23",
+  "revision": 2026102301,
   "updated": "2026-10-20",
-  "checked": "2026-10-22",
+  "checked": "2026-10-23",
   "currency": "SGD",
   "note": "Estimates from public sources (MileLion, MainlyMiles, SingSaver, MoneySmart, YouTrip, issuer pages). Banks change terms often — always check the bank's T&Cs.",
   "changes": [
