@@ -19,9 +19,9 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.23"
-REVISION = 2026102301
-CHECKED = "2026-10-23"
+VERSION = "2026.10.24"
+REVISION = 2026102401
+CHECKED = "2026-10-24"
 UPDATED = "2026-10-20"
 CHANGES = [
     {"date": "2026-10-20", "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."},
