@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.24",
-  "revision": 2026102401,
-  "updated": "2026-10-20",
-  "checked": "2026-10-24",
+  "version": "2026.10.25",
+  "revision": 2026102501,
+  "updated": "2026-10-25",
+  "checked": "2026-10-25",
   "currency": "SGD",
   "note": "Estimates from public sources (MileLion, MainlyMiles, SingSaver, MoneySmart, YouTrip, issuer pages). Banks change terms often — always check the bank's T&Cs.",
   "changes": [
+    {
+      "date": "2026-10-25",
+      "text": "Trust Freedom (Bonus mode): 5% tier capped at S$30 a quarter (15% tier keeps the S$250 cap)."
+    },
     {
       "date": "2026-10-20",
       "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."
@@ -1934,18 +1938,18 @@
           "minSpend": 500,
           "cap": {
             "kind": "reward",
-            "amount": 250,
+            "amount": 30,
             "period": "calendarQuarter",
             "pool": "trust-bonus"
           }
         }
       ],
       "highlights": [
-        "Up to 15% on one category you pick, S$250 cap per quarter; up to 1% on other local spend",
+        "15% on one category you pick with S$2,000 every month (S$250 cap per quarter), or 5% with S$500 (S$30 cap); 1% on other local spend",
         "No FX fee"
       ],
       "warnings": [
-        "Trust hasn't published the Freedom Card's spend tiers — CardWise assumes S$500/month for 5% and S$2,000/month for 15% (the old Cashback Card tiers)"
+        "You must hit the minimum in all three months of the quarter to get the bonus"
       ]
     },
     {

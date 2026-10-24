@@ -19,11 +19,12 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.24"
-REVISION = 2026102401
-CHECKED = "2026-10-24"
-UPDATED = "2026-10-20"
+VERSION = "2026.10.25"
+REVISION = 2026102501
+CHECKED = "2026-10-25"
+UPDATED = "2026-10-25"
 CHANGES = [
+    {"date": "2026-10-25", "text": "Trust Freedom (Bonus mode): 5% tier capped at S$30 a quarter (15% tier keeps the S$250 cap)."},
     {"date": "2026-10-20", "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-19", "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-18", "text": "First published catalog: 33 Singapore cards from 10 banks."},
@@ -518,11 +519,11 @@ P.append(dict(
         dict(id="bonus-15", label="Your bonus category (top tier)", rate=15, chosenOnly=True, currency="local",
              tierGroup="trust-bonus", minSpend=2000, cap=cap("reward", 250, "calendarQuarter", "trust-bonus")),
         dict(id="bonus-5", label="Your bonus category", rate=5, chosenOnly=True, currency="local",
-             tierGroup="trust-bonus", minSpend=500, cap=cap("reward", 250, "calendarQuarter", "trust-bonus")),
+             tierGroup="trust-bonus", minSpend=500, cap=cap("reward", 30, "calendarQuarter", "trust-bonus")),
     ],
-    highlights=["Up to 15% on one category you pick, S$250 cap per quarter; up to 1% on other local spend",
+    highlights=["15% on one category you pick with S$2,000 every month (S$250 cap per quarter), or 5% with S$500 (S$30 cap); 1% on other local spend",
                 "No FX fee"],
-    warnings=["Trust hasn't published the Freedom Card's spend tiers — CardWise assumes S$500/month for 5% and S$2,000/month for 15% (the old Cashback Card tiers)"],
+    warnings=["You must hit the minimum in all three months of the quarter to get the bonus"],
 ))
 P.append(dict(
     id="trust-freedom-stockback", name="Trust Freedom (Stockback mode)", issuer="Trust", network="Visa",
