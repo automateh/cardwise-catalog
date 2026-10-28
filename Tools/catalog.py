@@ -19,9 +19,9 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.28"
-REVISION = 2026102801
-CHECKED = "2026-10-28"
+VERSION = "2026.10.29"
+REVISION = 2026102901
+CHECKED = "2026-10-29"
 UPDATED = "2026-10-25"
 CHANGES = [
     {"date": "2026-10-25", "text": "Trust Freedom (Bonus mode): 5% tier capped at S$30 a quarter (15% tier keeps the S$250 cap)."},
