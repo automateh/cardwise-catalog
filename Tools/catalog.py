@@ -19,11 +19,12 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.10.31"
-REVISION = 2026103101
-CHECKED = "2026-10-31"
-UPDATED = "2026-10-25"
+VERSION = "2026.11.01"
+REVISION = 2026110101
+CHECKED = "2026-11-01"
+UPDATED = "2026-11-01"
 CHANGES = [
+    {"date": "2026-11-01", "text": "OCBC 365: dining, groceries and land transport now 6%; single S$800 tier with S$160 cap; telco, utilities and streaming drop to 0.25%."},
     {"date": "2026-10-25", "text": "Trust Freedom (Bonus mode): 5% tier capped at S$30 a quarter (15% tier keeps the S$250 cap)."},
     {"date": "2026-10-20", "text": "UOB EVOL: overseas cashback promo extended to 31 Dec 2027."},
     {"date": "2026-10-19", "text": "Mari Credit Card: 0% FX fee and 1.5% overseas cashback promo extended to 31 Dec 2027."},
@@ -345,7 +346,7 @@ P.append(dict(
               "Unused UOB cashback is forfeited after two years or when you close the card"],
 ))
 
-CAP365 = cap("reward", 80, "calendarMonth", "ocbc-365", tiers=[dict(minSpend=1600, amount=160)])
+CAP365 = cap("reward", 160, "calendarMonth", "ocbc-365")
 P.append(dict(
     id="ocbc-365", name="OCBC 365 Card", issuer="OCBC", network="Visa",
     rewardType="cashback", baseRate=0.25, foreignBaseRate=0.25, fxFeePercent=3.25, colorHex="#E4002B",
@@ -353,13 +354,15 @@ P.append(dict(
     minSpend=dict(amount=800, period="calendarMonth"),
     rules=[
         dict(id="petrol", label="Petrol", rate=6, categories=["petrol"], currency="local", cap=CAP365),
-        dict(id="dining", label="Dining & food delivery", rate=5, categories=["dining", "foodDelivery"], currency="any", cap=CAP365),
-        dict(id="everyday", label="Groceries, land transport, streaming, utilities & Watsons", rate=3,
-             categories=["groceries", "publicTransport", "rideHailing", "subscriptions", "bills", "health"], currency="local", cap=CAP365),
+        dict(id="dining", label="Dining (incl. fast food) & food delivery", rate=6, categories=["dining", "foodDelivery"], currency="any", cap=CAP365),
+        dict(id="everyday", label="Groceries & land transport", rate=6,
+             categories=["groceries", "publicTransport", "rideHailing"], currency="any", cap=CAP365),
+        dict(id="watsons", label="Watsons", rate=3, categories=["health"], currency="local", validUntil="2027-03-31", cap=CAP365),
     ],
-    highlights=["6% petrol, 5% dining & food delivery, 3% groceries, transport, streaming and utilities",
-                "Needs S$800 a month; S$80 cap (S$160 if you spend S$1,600)"],
-    warnings=["Bills here means utilities only — insurance and government payments earn nothing"],
+    highlights=["6% on dining, groceries, land transport and petrol",
+                "Needs S$800 a month; S$160 cap per calendar month"],
+    warnings=["Telco, utilities, streaming and EV charging earn only 0.25% from 1 Nov 2026",
+              "Watsons drops from 3% to 0.25% after 31 Mar 2027"],
 ))
 
 P.append(dict(

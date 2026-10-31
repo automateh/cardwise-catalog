@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "version": "2026.10.31",
-  "revision": 2026103101,
-  "updated": "2026-10-25",
-  "checked": "2026-10-31",
+  "version": "2026.11.01",
+  "revision": 2026110101,
+  "updated": "2026-11-01",
+  "checked": "2026-11-01",
   "currency": "SGD",
   "note": "Estimates from public sources (MileLion, MainlyMiles, SingSaver, MoneySmart, YouTrip, issuer pages). Banks change terms often — always check the bank's T&Cs.",
   "changes": [
+    {
+      "date": "2026-11-01",
+      "text": "OCBC 365: dining, groceries and land transport now 6%; single S$800 tier with S$160 cap; telco, utilities and streaming drop to 0.25%."
+    },
     {
       "date": "2026-10-25",
       "text": "Trust Freedom (Bonus mode): 5% tier capped at S$30 a quarter (15% tier keeps the S$250 cap)."
@@ -1263,21 +1267,15 @@
           "currency": "local",
           "cap": {
             "kind": "reward",
-            "amount": 80,
+            "amount": 160,
             "period": "calendarMonth",
-            "pool": "ocbc-365",
-            "tiers": [
-              {
-                "minSpend": 1600,
-                "amount": 160
-              }
-            ]
+            "pool": "ocbc-365"
           }
         },
         {
           "id": "dining",
-          "label": "Dining & food delivery",
-          "rate": 5,
+          "label": "Dining (incl. fast food) & food delivery",
+          "rate": 6,
           "categories": [
             "dining",
             "foodDelivery"
@@ -1285,50 +1283,52 @@
           "currency": "any",
           "cap": {
             "kind": "reward",
-            "amount": 80,
+            "amount": 160,
             "period": "calendarMonth",
-            "pool": "ocbc-365",
-            "tiers": [
-              {
-                "minSpend": 1600,
-                "amount": 160
-              }
-            ]
+            "pool": "ocbc-365"
           }
         },
         {
           "id": "everyday",
-          "label": "Groceries, land transport, streaming, utilities & Watsons",
-          "rate": 3,
+          "label": "Groceries & land transport",
+          "rate": 6,
           "categories": [
             "groceries",
             "publicTransport",
-            "rideHailing",
-            "subscriptions",
-            "bills",
+            "rideHailing"
+          ],
+          "currency": "any",
+          "cap": {
+            "kind": "reward",
+            "amount": 160,
+            "period": "calendarMonth",
+            "pool": "ocbc-365"
+          }
+        },
+        {
+          "id": "watsons",
+          "label": "Watsons",
+          "rate": 3,
+          "categories": [
             "health"
           ],
           "currency": "local",
+          "validUntil": "2027-03-31",
           "cap": {
             "kind": "reward",
-            "amount": 80,
+            "amount": 160,
             "period": "calendarMonth",
-            "pool": "ocbc-365",
-            "tiers": [
-              {
-                "minSpend": 1600,
-                "amount": 160
-              }
-            ]
+            "pool": "ocbc-365"
           }
         }
       ],
       "highlights": [
-        "6% petrol, 5% dining & food delivery, 3% groceries, transport, streaming and utilities",
-        "Needs S$800 a month; S$80 cap (S$160 if you spend S$1,600)"
+        "6% on dining, groceries, land transport and petrol",
+        "Needs S$800 a month; S$160 cap per calendar month"
       ],
       "warnings": [
-        "Bills here means utilities only — insurance and government payments earn nothing"
+        "Telco, utilities, streaming and EV charging earn only 0.25% from 1 Nov 2026",
+        "Watsons drops from 3% to 0.25% after 31 Mar 2027"
       ]
     },
     {
