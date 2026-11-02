@@ -19,9 +19,9 @@ from datetime import datetime
 #   UPDATED   the day any card's terms last changed.
 #   CHANGES   newest first, one short plain-English line per change. The app shows these under "What's changed".
 SCHEMA_VERSION = 1
-VERSION = "2026.11.02"
-REVISION = 2026110201
-CHECKED = "2026-11-02"
+VERSION = "2026.11.03"
+REVISION = 2026110301
+CHECKED = "2026-11-03"
 UPDATED = "2026-11-01"
 CHANGES = [
     {"date": "2026-11-01", "text": "OCBC 365: dining, groceries and land transport now 6%; single S$800 tier with S$160 cap; telco, utilities and streaming drop to 0.25%."},
